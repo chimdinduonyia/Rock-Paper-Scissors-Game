@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+
+    <h1 id="banner">Rock, Paper, Scissors</h1>
+    <h3 class="round">Game of 5</h3>
+
+    <div class="score-board">
+        <div class="home">0</div>
+        <div class="main-scoreboard">
+            <div class="player-score-name">[Player Name] <span class="trophy-badge">👤</span></div>
+            <div class="computer-score-name">Computer <span class="trophy-badge">🖥️</span></div>
+        </div>
+        <div class="away">0</div>
+    </div>
+    <div class="game-board">
+        <div class="player-half">
+            <div class="hand">
+                <div class="choice">
+                    ✊
+                </div>
+                <div class="notification notification-player">
+                    Chimdindu Wins!
+                </div>
+            </div>
+            <div class="controls">
+                <div class="start-game">
+                    <span id="warning">Please Enter Your Name</span>
+                    <form autocomplete="off">
+                        <input type="text" name="player-name" id="player-name" placeholder="Enter name (8 characters max)">
+                        <button type="button" id="start">Start Game</button>
+                    </form>
+                </div>
+                <!-- <div id="buttons">
+                    <button type="button" id="rock" class="options">
+                        ✊
+                        <span class="tip">Rock <span>Q</span></span>
+                    </button>
+                    <button type="button" id="paper" class="options">
+                        👋
+                        <span class="tip">Paper <span>W</span></span>
+                    </button>
+                    <button type="button" id="scissors" class="options">
+                        ✌️
+                        <span class="tip">Scissors <span>E</span></span>
+                    </button>
+                </div> -->
+                <!-- <div class="restart">
+                    <button type="button" id="restartBtn">Restart?</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="computer-half">
+            <div class="hand">
+                <div class="choice">
+                    ✊
+                </div>
+                <div class="notification notification-computer">
+                    Computer Wins!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
