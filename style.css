@@ -369,6 +369,17 @@ h1{
 }
 
 @media screen and (max-width: 600px){
+
+    .round{
+        width: 70px;
+        height: 70px;
+        font-size: 13px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
     .game-board{
         flex-direction: column-reverse;
         align-items: center;
@@ -379,5 +390,38 @@ h1{
         align-items: center;
     }
 
+    .score-board{
+        gap: 20px;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+
+    .home, .away{
+        font-size: 40px;
+    }
+
+    .main-scoreboard{
+        flex-direction: column;
+    }
+    
+    .player-score-name{
+        border-radius: 20px 20px 0 0;
+        font-size: 14px
+    }
+    .computer-score-name{
+        border-radius:  0 0 20px 20px;
+        font-size: 14px;
+    }
+
+    .hand{
+        width: 150px;
+        height: 150px;
+    }
+
+    .choice{
+        font-size: 45px;
+    }
+
+    
 }
 
